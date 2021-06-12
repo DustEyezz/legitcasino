@@ -1,0 +1,564 @@
+body {
+    background-color: #333;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+   height:15vh;
+   width:100%;
+   background-color: #111; 
+}
+
+.align-right{
+    float: right;
+}
+
+.animate-left{
+      position:relative;
+      animation:animateleft 0.4s
+}
+
+@keyframes animateleft{
+    from{
+        left:-300px;
+        opacity:0
+    } 
+    to{
+        left:0;
+        opacity:1
+    }
+}
+
+.buttonland {
+    background: url("golden.jpg") no-repeat center center;
+    background-size: cover;
+    border: none;
+    color: red;
+    padding: 3vw 4vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family:Impact,sans-serif;
+    border-radius: 0.5vw;
+}
+
+.buttonland:hover{
+    color: rgb(112, 11, 11);
+    text-shadow:
+    0 0 0.1vw #fff,
+    0 0 0.5vw #fff,
+    0 0 1vw #fff,
+    0 0 2vw gold,
+    0 0 3.5vw gold,
+    0 0 5vw gold,
+    0 0 7vw gold,
+    0 0 12vw gold;
+}
+
+.button {
+    justify-content: center;
+    border: none;
+    color: white;
+    padding: 1.5vh 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+.button a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    position:relative;
+    bottom:2vh;
+}
+
+.button:hover{
+    color: rgb(100, 88, 88);
+    text-shadow:
+    0 0 0.1vw #fff,
+    0 0 0.5vw #fff,
+    0 0 1vw #fff,
+    0 0 2vw gold,
+    0 0 3.5vw gold,
+    0 0 5vw gold,
+    0 0 7vw gold,
+    0 0 12vw gold;
+}
+
+.currenc {
+    justify-content: center;
+    border: none;
+    color: white;
+    padding: 1.5vh 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1,5vw;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+.currenc:hover {
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px gold,
+    0 0 82px gold,
+    0 0 92px gold,
+    0 0 102px gold,
+    0 0 121px gold;
+    cursor: default;
+}
+
+.animate-fading{
+    animation:fading 10s infinite
+}
+
+@keyframes fading{
+    0%{
+        opacity:0
+    }
+    50%{
+        opacity:1
+    }
+    100%{
+        opacity:0
+    }
+}
+
+img.smolbox {
+    width: auto;
+    height: 14.5vh;
+    padding-right: 8vw;
+    margin-left: 3vw;
+}
+
+img.animate-fading {
+    object-fit: fill;
+    width: 100%;
+    height: 102vh;
+    margin: 0%;
+} 
+
+.content-text{
+    font-size: 6vw;
+    background: url("golden.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip:text;
+    background-clip:text; 
+    font-family:Impact,sans-serif;
+    padding:0;
+    margin:0;
+    text-align:center;
+    -webkit-text-stroke: 0.2vw black;
+}
+
+.display-middletop{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}
+
+.display-middlebottom{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}   
+
+input[type="password"], input[type="text"] {
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+  box-shadow: 0 0 4px 1px rgba(192, 194, 75, 0.3);
+  outline: 0;
+}
+
+input[type="submit"] {
+  width:240px;
+  height:35px;
+  display:block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #747a7a;
+  padding-top:6px;
+  margin: 29px 0 0 29px;
+  position:relative;
+  cursor:pointer;
+  border: none;  
+  background-color: #747a7a;
+  background-image: linear-gradient(top,#0b0c0c,#3111);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:5px;
+  box-shadow: inset 0px 1px 0px #030708, 0px 5px 0px 0px #242525, 0px 10px 5px #999;
+}
+
+.shadow {
+  background: #000;
+  border-radius: 12px 12px 4px 4px;
+  box-shadow: 0 0 20px 10px #000;
+  height: 12px;
+  margin: 30px auto;
+  opacity: 0.2;
+  width: 270px;
+}
+
+.wrong{
+    text-align: center;
+    padding-top: 5px;
+    color: red;
+}
+
+.register{
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+}
+
+.chatango{
+    height: 82vh;
+    width: 15vw;
+    margin: 0px;
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+}
+
+input[type=checkbox] + label {
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+.margin-left{
+    margin-left: 10px;
+    padding-right: 15px;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #55ca11;
+    color: white;
+    margin-bottom: 15px;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.closebtn:hover {
+    color: black;
+}
+
+.dropbtn {
+    color: white;
+    font-size: 1vw;
+    width: 12vw;
+    max-width: 12vw;
+    padding: 2vh 2vw;
+    border: none;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 12vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.5vw 1vw;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: gold;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: gold;
+}
+
+.li-align-right-gray{
+    float: right;
+    color: white;
+    border-radius:4px;
+    text-align: center;
+}
+
+.mainbox{
+    height: 83vh;
+    width: 100%;
+}
+
+.spinner{
+    position: absolute;
+    margin-left: 40.5vw;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#main { 
+    width: 100%;
+    margin: 0 auto;
+}
+
+#sidebar    {
+    width: 15vw;
+    height: 82vh;
+    float: left;
+}
+
+#page-wrap  {
+    width: 100% - 15vw;
+    height: 82vh;
+    margin-left: 15vw;
+}
+
+.betamm{
+    margin-left: 34vw;
+    margin-top: 65vh;
+    position:absolute;
+}
+
+.betconfirmblack input[type="submit"]{
+    margin-left: 10vw;
+    margin-top: 72vh;
+    position:absolute;
+    color: black;
+    align-items: normal;
+}
+
+.betconfirmgreen input[type="submit"]{
+    margin-left: 34vw;
+    margin-top: 72vh;
+    position:absolute;
+    color: green;
+    align-items: normal;
+}
+
+.betconfirmred input[type="submit"]{
+    margin-left: 58vw;
+    margin-top: 72vh;
+    position:absolute;
+    color: red;
+    align-items: normal;
+}
+
+.timer{
+    margin-left: 38.7vw;
+    position:absolute;
+    font-family:Arial, "Helvetica", sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    text-align:center;
+    text-shadow:1px 1px 0px #747a7a;
+}
+
+input[type="number"] {
+    border: 1px solid #a1a3a3;
+    border-radius: 4px;
+    box-shadow: 0 1px #fff;
+    box-sizing: border-box;
+    color: #696969;
+    height: 3vh;
+    width: 240px;
+    text-align: center;
+}
+
+.betammcoin{
+    margin-left: 34vw;
+    margin-top: 5vh;
+    position:absolute;
+}
+
+.wrap{
+    margin-left: 31.7vw;
+    margin-top: 10vh;
+    display: inline-flex;
+    height: 10vh;
+    width: 20vw;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.4vw;
+}
+
+.wrap .option{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1vw;
+    cursor: pointer;
+    margin: 1vw;
+    padding: 0 1vw;
+    transition: all 0.3s ease;
+}
+
+.wrap .option .dot{
+    height: 1vw;
+    width: 1vw;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wrap .option .dot::before{
+    position: absolute;
+    content: "";
+    background: gold;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#option-1:checked:checked ~ .option-1,#option-2:checked:checked ~ .option-2{
+    border-color: gold;
+    background: gold;
+}
+
+#option-1:checked:checked ~ .option-1 .dot, #option-2:checked:checked ~ .option-2 .dot{
+    background: #fff;
+}
+
+#option-1:checked:checked ~ .option-1 .dot::before, #option-2:checked:checked ~ .option-2 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.wrap .option span{
+    font-size: 20px;
+    color: #808080;
+}
+
+#option-1:checked:checked ~ .option-1 span, #option-2:checked:checked ~ .option-2 span{
+color: #fff;
+}
+
+.betconfirmcoin input[type="submit"]{
+    margin-left: 34vw;
+    margin-top: 10vh;
+    position:absolute;
+    color: gold;
+    align-items: normal;
+}
+
+.showname{
+    background-color: rgb(83, 79, 79);
+}
+
+.alligncoin{
+    margin-top: 40vh;
+    width: 10vw;
+    height: auto;
+    position: absolute;
+}
+
+.betmsg{
+    margin-left: 10vw;
+    color: white;
+    font-size: 2vw;
+    top: 19vh;
+    width: 20vw;
+    position: absolute;
+}
+
+
+
+

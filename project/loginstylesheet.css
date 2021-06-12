@@ -1,0 +1,273 @@
+body {
+    background-color: #333;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+   height:15vh;
+   width:100%;
+   background-color: #111; 
+}
+
+.align-right{
+    float: right;
+}
+
+.animate-left{
+      position:relative;
+      animation:animateleft 0.4s
+}
+
+@keyframes animateleft{
+    from{
+        left:-300px;
+        opacity:0
+    } 
+    to{
+        left:0;
+        opacity:1
+    }
+}
+
+.button {
+    justify-content: center;
+    border: none;
+    color: white;
+    padding: 1.5vh 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+.button a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    position:relative;
+    bottom:2vh;
+}
+
+.button:hover{
+    color: rgb(100, 88, 88);
+    text-shadow:
+    0 0 0.1vw #fff,
+    0 0 0.5vw #fff,
+    0 0 1vw #fff,
+    0 0 2vw gold,
+    0 0 3.5vw gold,
+    0 0 5vw gold,
+    0 0 7vw gold,
+    0 0 12vw gold;
+}
+
+.content-text{
+    font-size: 6vw;
+    background: url("golden.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip:text;
+    background-clip:text; 
+    font-family:Impact,sans-serif;
+    padding:0;
+    margin:0;
+    text-align:center;
+    -webkit-text-stroke: 0.2vw black;
+}
+
+.display-middletop{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}
+
+.display-middlebottom{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}
+
+.login {
+  background: #eceeee;
+  border: 0.3vw solid #42464b;
+  border-radius: 0.5vw;
+  height: 35vh;
+  margin: 2vw auto 0;
+  width: 19vw;
+}
+
+input[type="password"], input[type="text"] {
+  border: 0.1vw solid #a1a3a3;
+  border-radius: 0.3vw;
+  box-shadow: 0 0.2vw #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 5.5vh;
+  margin: 3vh 0 0 3vw;
+  padding-left: 2vw;
+  transition: box-shadow 0.3s;
+  width: 13vw;
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+  box-shadow: 0 0 0.4vw 0.1vw rgba(192, 194, 75, 0.3);
+  outline: 0;
+}
+
+input[type="submit"] {
+  width:15vw;
+  height:5vh;
+  display:block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:2vh;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:0.1vw 0.1vw 0px #747a7a;
+  padding-top:0.7vh;
+  margin: 3vh 0 0 2vw;
+  position:relative;
+  cursor:pointer;
+  border: none;  
+  background-color: #747a7a;
+  background-image: linear-gradient(top,#0b0c0c,#3111);
+  border-top-left-radius: 0.5vw;
+  border-top-right-radius: 0.5vw;
+  border-bottom-right-radius: 0.5vw;
+  border-bottom-left-radius: 0.5vw;
+  box-shadow: inset 0px 0.1vw 0px #030708, 0px 0.4vw 0px 0px #242525, 0px 1vw 0.5vw #999;
+}
+
+.shadow {
+  background: #000;
+  border-radius: 1.2vw 1.2vw 0.4vw 0.4vw;
+  box-shadow: 0 0 2vw 1vw #000;
+  height: 1.2vh;
+  margin: 3vw auto;
+  opacity: 0.2;
+  width: 27vw;
+}
+
+input[type="submit"]:active {
+  top:0.3vh;
+  box-shadow: inset 0 0.1vw 0 #171a1b, 0 0.2vw 0 0 #948540, 0 0.5vw 0.3vw #999;
+}
+
+.wrong{
+    text-align: center;
+    padding-top: 0.5vh;
+    color: red;
+}
+
+.register{
+    text-align: center;
+    margin-top: 2vh;
+    color: gray;
+}
+
+.loginbody{
+    background-image: url("casinoimg.jpg");
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+}
+
+input[type=checkbox] + label {
+    position: relative;
+    cursor: pointer;
+    width: 30vw;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.2vw;
+    height: 1.2vw;
+    top: 0;
+    left: 0;
+    border: 0.2vw solid #555555;
+    border-radius: 0.3vw;
+    background-color: white;
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 0.4vw;
+    height: 0.8vw;
+    border: solid black;
+    border-width: 0 0.15vw 0.15vw 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0.15vw;
+    left: 0.5vw;
+}
+
+.registercheck{
+    text-align: center;
+    margin-top: 10px;
+    color: gray;
+}
+
+.registerpage {
+    background: #eceeee;
+    border: 1px solid #42464b;
+    border-radius: 0.4vw;
+    height: 45vh;
+    margin: 2vw auto 0;
+    width: 19vw;
+}
+
+.margin-left{
+    margin-left: 10px;
+    padding-right: 15px;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #55ca11;
+    color: white;
+    margin-bottom: 15px;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.closebtn:hover {
+    color: black;
+}
+
+.li-align-right-gray{
+    float: right;
+    color: white;
+    border-radius:4px;
+    text-align: center;
+}
+
+
+
